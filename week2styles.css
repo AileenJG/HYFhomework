@@ -1,0 +1,241 @@
+
+html, body {
+  overflow-x: hidden;
+}
+  body {
+    width: 100%;
+
+    padding-right: 75px;
+    <!-- still need to make website responsive and mobilefriendly-->
+    overflow-x: hidden;
+}
+.title {
+    height: auto;
+    width: auto;
+    background: rgb(227, 227, 232);
+    padding: 5px;
+
+
+    z-index: 1;
+  }
+.title-text {
+    padding-left: 50px;
+  }
+
+  p {
+    color: rgb(185, 185, 198);
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+  }
+
+  .nav ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 12px;
+  }
+
+  li {
+    width: 10%;
+  }
+
+  .office {
+    height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .office img {
+    height: 100%;
+    width: 100%;
+
+
+    object-fit: cover;
+
+  }
+
+  .container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sidebar {
+    padding-right: 50px;
+    min-width: 25%;
+    max-width: 25%
+  }
+  .main {
+
+    max-width: 65%
+   }
+   .gallery {
+     max-width: 25%;
+     padding-right: 50px;
+
+   }
+   .logos {
+     max-width: 70%;
+   }
+   .logos-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     max-width: 70%;
+   }
+   .logos img {
+     height: 100px;
+     padding: 30px;
+
+   }
+   .footer {
+     background-color: rgb(117, 42, 239);
+     color: white;
+   }
+   .footer-text {
+     display: flex;
+     flex-flow: row;
+     flex-wrap: nowrap;
+      padding-left: 75px;
+      justify-content: space-around;
+   }
+   .footer img {
+
+     width: 100%;
+   }
+.footer4 {
+  padding-right: 75px;
+}
+@media screen and (max-width: 736px) {
+body {
+  display: flex;
+  flex-flow: column;
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+.title {
+  <!-- figure out why this has white space around-->
+  height: 100%;
+  width: 100%
+  padding: 0px;
+}
+.title-text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0px;
+  font-size: smaller;
+
+}
+.nav ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: small;
+  padding: 0px;
+  justify-content: flex-start;
+<!-- again, figure out why there's the extra white space-->
+}
+li {
+  width: 100%;
+  padding: 0px;
+}
+.office {
+  width: 100%;
+  padding: 0px;
+  display: block;
+  max-height: 200px;
+}
+.office img {
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  object-fit: cover;
+  padding-bottom: 0px;
+  max-height: 200px;
+  margin: 0;
+
+}
+.container {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.container h2 {
+  font-size: 75%;
+}
+.container h3 {
+  font-size: 75%;
+}
+.sidebar {
+  min-width: 100%;
+  max-width: 100%;
+}
+.main {
+  min-width: 100%;
+  max-width: 100%;
+}
+.gallery {
+max-width: 25%;
+padding: 0px;
+}
+.logos {
+  min-width: 100%;
+  max-width: 100%;
+}
+.logoscontainer {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.logos img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+flex-basis: 1 1 auto;
+
+  padding: 5px;
+
+}
+.footer {
+  background-color: rgb(117, 42, 239);
+  color: white;
+}
+.footer h4, p {
+  font-size: 75%;
+}
+.footer-text {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+   justify-content: space-around;
+   padding: 25px;
+}
+.footer iframe {
+
+height: 75;
+width: 100%;
+object-fit: contain;
+}
+.footer1, .footer2, .footer3, .footer4 {
+  padding: 10px;
+}
+.footer4 {
+padding-right: 15px;
+}
+}
